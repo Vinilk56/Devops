@@ -19,7 +19,7 @@ resource "azurerm_storage_account" "tfstate_sa" {
 
 # Storage Container for backend
 resource "azurerm_storage_container" "tfstate_container" {
-  name                  = "tfstate"
-  storage_account_name  = azurerm_storage_account.tfstate_sa.name
+  name                  = "tfstate1"
+  storage_account_name  = azurerm_storage_account.tfstate_sa.name1
   container_access_type = "private"
 }

@@ -17,6 +17,10 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.azureauth }}
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.7.5   # specify a version
 
       - name: Run Terraform
         run: terraform init

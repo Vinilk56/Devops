@@ -1,6 +1,6 @@
-#provider "azurerm" {
- # features {}
-#}
+provider "azurerm" {
+  features {}
+}
 
 # Resource Group for backend
 resource "azurerm_resource_group" "tfstate_rg" {
